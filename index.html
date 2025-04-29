@@ -19,7 +19,7 @@
             <div class ="logo">
                 Đăng Khoa
             </div>
-            <nav>
+            <nav id="mobile-nav">
                 <ul>
                     <li>
                         <a href "#">Home</a>
@@ -42,17 +42,18 @@
                  </button>
 
                  <!-- Only show when the screen is 700px -->
-                <div class ="bar">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <div id ="menu-toggle" class ="bar">
+                <i id="bars-icon" class="fa fa-bars" aria-hidden="true"></i>
+                <i style="display: none;" id="close-icon" class="fa-solid fa-xmark"></i>
                 </div>    
             </div>
         </header>
 
         <main>
             <div class="content">
-                <h1>I'm.<span>Dang Khoa</span></h1>
+                <h1 id="title">I'm.<span>Dang Khoa</span></h1>
                 <p>Full Stack Developer</p>
-                <p>Start Guide for Beginner Designers</p>
+                <p id="description">Start Guide for Beginner Designers</p>
                     <div class="btn-wrapper">
                         <button class ="btn-start button">
                             <i class="fa-solid fa-rocket"></i>Let"s Start</button>
@@ -69,5 +70,6 @@
     <!-- CDN -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./app.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
